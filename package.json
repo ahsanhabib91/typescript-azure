@@ -2,18 +2,16 @@
   "name": "typescript-azure",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahsanhabib91/typescript-azure.git"
-  },
-  "author": "Md. Ahsan Habib",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ahsanhabib91/typescript-azure/issues"
-  },
-  "homepage": "https://github.com/ahsanhabib91/typescript-azure#readme"
+  "dependencies": {},
+  "devDependencies": {
+    "@azure/functions": "^1.0.2-beta2",
+    "typescript": "^3.3.3"
+  }
 }
